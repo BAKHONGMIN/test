@@ -78,7 +78,8 @@ const Imgcard = () => {
               <div className="main-slide-item diptqyue"><button onClick={()=>toggleMenua()}><img className={isOpena ? "starclick" : "star"} src={star} alt='star' width="30px" /></button></div>
               <div className="main-slide-text">
                 <h2>diptqyue</h2>
-                <span>Ecommerce</span><br/><br/>
+                <span>Ecommerce</span><br/>
+                <span>구글 애널리틱스연동</span><br/>
                 <span>2021.05.20</span>
               </div>
               <div className="quickbutton">
@@ -95,7 +96,8 @@ const Imgcard = () => {
               <div className="main-slide-item hbaf"><button onClick={()=>toggleMenub()}><img className={isOpenb ? "starclick" : "star"} src={star} alt='star' width="30px" /></button></div>
               <div className="main-slide-text">
                 <h2>HBAF</h2>
-                <span>Gnuboard</span><br/><br/>
+                <span>Gnuboard</span><br/>
+                <span>구글 애널리틱스연동</span><br/>
                 <span>2021.04.28</span>
               </div>
               <div className="quickbutton">
@@ -111,8 +113,8 @@ const Imgcard = () => {
             <div className="main-slide">
               <div className="main-slide-item event1"><button onClick={()=>toggleMenuc()}><img className={isOpenc ? "starclick" : "star"} src={star} alt='star' width="30px" /></button></div>
               <div className="main-slide-text">
-                <h2>diptqyue-event_1</h2>
-                <span>Bootstrap5</span><br/><br/>
+                <h2>리안헤어 고객관리시스템</h2>
+                <span>React+API</span><br/>
                 <span>2021.04.20</span>
               </div>
               <div className="quickbutton">
@@ -123,16 +125,17 @@ const Imgcard = () => {
             </Border>
           </SwiperSlide>
           <SwiperSlide>
-      <Border theme={ThemeMode[0]}>
+          <Border theme={ThemeMode[0]}>
             <div className="main-slide">
               <div className="main-slide-item event2"><button onClick={()=>toggleMenud()}><img className={isOpend ? "starclick" : "star"} src={star} alt='star' width="30px" /></button></div>
               <div className="main-slide-text">
-                <h2>diptqyue-event_2</h2>
-                <span>HTML+CSS</span><br/><br/>
+                <h2>diptqyue-event</h2>
+                <span>Bootstrap5/HTML+CSS</span><br/>
                 <span>2021.04.18</span>
               </div>
               <div className="quickbutton">
-              <button className='button4'><a href={site[4]} target="_blank">사이트</a></button>
+              <button className='button3 btn'><a href={site[3]} target="_blank">이벤트 사이트(1)</a></button>
+              <button className='button4 btn'><a href={site[4]} target="_blank">이벤트 사이트(2)</a></button>
               {/* <button className='button4'><a href={process[0]} target="_blank">기획서</a></button> */}
               </div>
             </div>
@@ -155,17 +158,17 @@ const Border = styled.div`
     border-color:${({ theme }) => theme.borderColor};
     background-color:${({ theme }) => theme.borderColor};
     & .simmons{
-      background-image: url(img/simmons.png);
+      background-image: url(img/simmons1.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
     & .diptqyue{
-      background-image: url(img/diptqyue.png);
+      background-image: url(img/diptyque1.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
     & .hbaf{
-      background-image: url(img/hbaf.png);
+      background-image: url(img/hbaf1.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -175,7 +178,7 @@ const Border = styled.div`
       background-size: cover;
     }
     & .event2{
-      background-image: url(img/diptqyue-event2.png);
+      background-image: url(img/event3.png);
       background-repeat: no-repeat;
       background-size: cover;
     }

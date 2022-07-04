@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import AppLayout from './AppLayout';
 import Typing from './Typing';
@@ -12,7 +12,8 @@ import '../App.scss';
 import { useTheme } from '../context/themeProvider';
 
 const Main = () => {
-  const names = ['현명한 박홍민', '똑똑한 박홍민', '한결같은 박홍민', '진실된 박홍민', '변하지 않는 박홍민', '카멜레온 같은 박홍민'] ;
+  // const names = ['카멜레온같은 박홍민', '똑똑한 박홍민', '한결같은 박홍민', '진실된 박홍민', '변하지 않는 박홍민', '카멜레온 같은 박홍민'] ;
+  let [good,goodness] = useState(['기획,디자인 모두 가능한 웹퍼블리셔 박홍민','카멜레온 같은 박홍민',  '변화를 두려워하지 않는 박홍민', '성실한 박홍민','중국어 가능한 박홍민','분위기 메이커 박홍민']);    
   // const nameList = names.map((index) => (<Slidetext name={index}/>));
   const ThemeMode = useTheme();
   return (
@@ -26,12 +27,12 @@ const Main = () => {
               <li><Typing /></li>
             </Searchmenu>
             <Submenu>
-              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{names[0]}</a></li></Div> 
-              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{names[1]}</a></li></Div> 
-              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{names[2]}</a></li></Div> 
-              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{names[3]}</a></li></Div> 
-              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{names[4]}</a></li></Div>
-              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{names[5]}</a></li></Div>  
+              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{good[0]}</a></li></Div> 
+              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{good[1]}</a></li></Div> 
+              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{good[2]}</a></li></Div> 
+              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{good[3]}</a></li></Div> 
+              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{good[4]}</a></li></Div>
+              <Div theme={ThemeMode[0]}><li className='submenuli'><img src={Submenuimg} alt="submenu" className="submenuimg" /><a href="/" className="submenutext">{good[5]}</a></li></Div>  
             </Submenu> 
           </Input>
           <Iconkey theme={ThemeMode[0]}><img src={Key} alt="key" width="20px" /></Iconkey>

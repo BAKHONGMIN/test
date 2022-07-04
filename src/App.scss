@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap');
 .d-none{
     display: none;
 }
@@ -118,5 +118,10 @@
   
   .accordion-content {
     padding: 1em 1.5em;
+    font-size: 13px;
+    line-height: 20px;
+    p{
+      font-size: 13px;
+      font-family: 'Noto Serif SC', serif;}
   }
   

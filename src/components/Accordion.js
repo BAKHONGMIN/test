@@ -6,19 +6,16 @@ import '../fonts/font.css';
 import '../App.scss';
 
 
-const Accordion = ({ title, children }) => {
+
+const Accordion = ({ title, children, childrenc }) => {
     const [isOpen, setOpen] = React.useState(false);
     return (
         <Text>
       <div className="accordion-wrapper">
-        <div
-          className={`accordion-title ${isOpen ? "open" : ""}`}
-          onClick={() => setOpen(!isOpen)}
-          >
-          {title}
-        </div>
+        <div className={`accordion-title ${isOpen ? "open" : ""}`}
+          onClick={() => setOpen(!isOpen)}>{title}</div>
         <div className={`accordion-item ${!isOpen ? "collapsed" : ""}`}>
-          <div className="accordion-content">{children}</div>
+          <div className="accordion-content">{children}<p>{childrenc}</p></div>
         </div>
       </div>
       </Text>
@@ -69,7 +66,7 @@ const Text = styled.div`
   
     &:hover,
     &.open {
-      color: black;
+      color:  ${({ theme }) => theme.textColor};
     }
   
     &.open {
@@ -77,6 +74,7 @@ const Text = styled.div`
         content: "";
         border-top: 0;
         border-bottom: 5px solid ;
+        color:  ${({ theme }) => theme.textColor};
       }
     }
   }
