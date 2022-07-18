@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import AppLayout from './AppLayout';
@@ -13,7 +14,7 @@ import { useTheme } from '../context/themeProvider';
 
 const Main = () => {
   // const names = ['카멜레온같은 박홍민', '똑똑한 박홍민', '한결같은 박홍민', '진실된 박홍민', '변하지 않는 박홍민', '카멜레온 같은 박홍민'] ;
-  let [good,goodness] = useState(['기획,디자인 모두 가능한 웹퍼블리셔 박홍민','카멜레온 같은 박홍민',  '변화를 두려워하지 않는 박홍민', '성실한 박홍민','중국어 가능한 박홍민','분위기 메이커 박홍민']);    
+  let [good,goodness] = useState(['기획,디자인 모두 가능한 UX/UI 디자이너 박홍민','카멜레온 같은 박홍민',  '변화를 두려워하지 않는 박홍민', '성실한 박홍민','중국어 가능한 박홍민','분위기 메이커 박홍민']);    
   // const nameList = names.map((index) => (<Slidetext name={index}/>));
   const ThemeMode = useTheme();
   return (

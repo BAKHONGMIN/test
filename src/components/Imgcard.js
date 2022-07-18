@@ -15,7 +15,7 @@ const Imgcard = () => {
   const ThemeMode = useTheme();
   let [site,sitech] = useState(['https://ghdals2655.cafe24.com/bootstrap5/simmons/', 'https://ghdals2162.cafe24.com/', 'https://ghdals2655.cafe24.com/HBAF/', 'https://ghdals2162.cafe24.com/diptqyue-event1/','https://ghdals2162.cafe24.com/diptqyue-event2/']); 
   let [process,processch] = useState(['https://ghdals2655.cafe24.com/simmons_process/', 'https://ghdals2655.cafe24.com/diptyque_process/', 'https://ghdals2655.cafe24.com/hbaf_process/', '','']);
-  let [nbox,nboxer] = useState(['http://naver.me/5qgZ3ABx', 'http://naver.me/5y0fgQeT', '', '','']);
+  let [nbox,nboxer] = useState(['http://naver.me/5qgZ3ABx', 'http://naver.me/5y0fgQeT', 'http://naver.me/5XUg4c4Z', '','']);
   let [manual,manualch] = useState(['http://naver.me/5IlWLYLc', 'http://naver.me/Gaz5wjUA', 'http://naver.me/xgGnzhQH', '','']);
 
   const [isOpen, setMenu] = useState(false);  // 메뉴의 초기값을 false로 설정
@@ -51,6 +51,23 @@ const Imgcard = () => {
           centeredSlides={true}
           scrollbar={{ draggable: true, dragSize: 24 }}
         >
+          <SwiperSlide>
+            <Border theme={ThemeMode[0]}>
+            <div className="main-slide">
+              <div className="main-slide-item event1"><button onClick={()=>toggleMenuc()}><img className={isOpenc ? "starclick" : "star"} src={star} alt='star' width="30px" /></button></div>
+              <div className="main-slide-text">
+                <h2>자기소개 페이지</h2>
+                <span>React</span><br/>
+                <span>2021.06.20</span>
+              </div>
+              <div className="quickbutton">
+              <button className='button3 nbox'><a href={site[3]} target="_blank">사이트</a></button>
+              <button className='button3 nbox'><a href={nbox[2]} target="_blank">제작노트</a></button>
+              {/* <button className='button3'><a href={process[0]} target="_blank">기획서</a></button> */}
+              </div>
+            </div>
+            </Border>
+          </SwiperSlide>
           <SwiperSlide>
             <Border theme={ThemeMode[0]}>
             <div className="main-slide">
@@ -111,22 +128,6 @@ const Imgcard = () => {
           <SwiperSlide>
           <Border theme={ThemeMode[0]}>
             <div className="main-slide">
-              <div className="main-slide-item event1"><button onClick={()=>toggleMenuc()}><img className={isOpenc ? "starclick" : "star"} src={star} alt='star' width="30px" /></button></div>
-              <div className="main-slide-text">
-                <h2>리안헤어 고객관리시스템</h2>
-                <span>React+API</span><br/>
-                <span>2021.04.20</span>
-              </div>
-              <div className="quickbutton">
-              <button className='button3'><a href={site[3]} target="_blank">사이트</a></button>
-              {/* <button className='button3'><a href={process[0]} target="_blank">기획서</a></button> */}
-              </div>
-            </div>
-            </Border>
-          </SwiperSlide>
-          <SwiperSlide>
-          <Border theme={ThemeMode[0]}>
-            <div className="main-slide">
               <div className="main-slide-item event2"><button onClick={()=>toggleMenud()}><img className={isOpend ? "starclick" : "star"} src={star} alt='star' width="30px" /></button></div>
               <div className="main-slide-text">
                 <h2>diptqyue-event</h2>
@@ -141,6 +142,7 @@ const Imgcard = () => {
             </div>
             </Border>
           </SwiperSlide>
+
         </Swiper>
       </div>
     </main>
@@ -173,7 +175,7 @@ const Border = styled.div`
       background-size: cover;
     }
     & .event1{
-      background-image: url(img/diptqyue-event1.png);
+      background-image: url(img/portfolio.png);
       background-repeat: no-repeat;
       background-size: cover;
     }

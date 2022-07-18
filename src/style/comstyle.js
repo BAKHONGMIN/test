@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import styled from 'styled-components';
 import '../fonts/font.css'
 import { useTheme } from '../context/themeProvider';
@@ -8,6 +9,6 @@ export const ComContainer = styled.div`
   margin: 0;
   position: relative;
   font-family:'Notosans-m';
-  padding: 20px 5%;
+  padding: 0px 5%;
   background-color : ${props => props.theme === 'light' ? "#f8f7f4" : "#1e1e22"}; 
 `;

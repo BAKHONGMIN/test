@@ -8,15 +8,15 @@ import react from '../img/react.svg';
 import html from '../img/html.svg';
 import css from '../img/css.svg';
 import javascript from '../img/javascript.svg';
-import mainimg from '../img/Layer 9.png';
+import figma from '../img/figma.png';
+import mainimg from '../img/myimg.png';
 import ComLayout from './ComLayout';
 import { useTheme } from '../context/themeProvider';
 import '../fonts/font.css';
 import '../App.scss';
 
-
 const About = () =>{
-    let [about_me,about_mech] = useState(['About_me', '박홍민', '1995.01.08','인천 부평구','010.2162.2664']);
+    let [about_me,about_mech] = useState(['About_me', '박홍민', '1995.01.08','인천시 부평구','010.2162.2664']);
     let [education,educationch] = useState(['Education', '부천대학교 컴퓨터공학과 졸업', '그린컴퓨터아트학원 PWA프론트엔드 양성과정 수료']);
     let [experience,experiencech] = useState(['Experience', '신도기연(BOE) PLC프리랜서', '테스탑 기술영업']);
     let [certificate,certificatech] = useState(['Certificate', '웹디자인 기능사','GTQ 그래픽기술자격', 'Auto CAD2급','HSK 중국어 5급','1종보통 운전면허','한국사 2급','구글애널리틱스']);
@@ -30,7 +30,7 @@ const About = () =>{
                     <Main>
                         <li className='maintext'>
                         <h2>BAK HONG MIN</h2>
-                        <button><a href='박홍민-이력서.pdf' download="박홍민-이력서.pdf"> RESUME</a></button>
+                        <button><a href='http://naver.me/Frvjwg7X' target='_blank'> RESUME</a></button>
                         <Text>
                         <div>
                             <ul>
@@ -76,6 +76,7 @@ const About = () =>{
                                     <img src={html} alt='html' width="30px"></img>
                                     <img src={css} alt='css' width="30px"></img>
                                     <img src={javascript} alt='javascript' width="32px"></img>
+                                    <img src={figma} alt='figma' width="30px"></img>
                                     </Img>
                                 </li>
                             </ul>
@@ -85,7 +86,7 @@ const About = () =>{
                 </Content>
                 <Mainimg>
                 <div className="mainimg">
-                    <img src={mainimg} alt='mainimg'/>
+                    <img src={mainimg} alt='mainimg' width="500px"/>
                 </div>
                 </Mainimg>
             </Aboutmap>
@@ -142,6 +143,7 @@ const Main  = styled.ul`
     }
 `
 const Text  = styled.div`
+    margin-top:10px;
     & div{
         display:flex;
         justify-content: space-between;
@@ -150,7 +152,7 @@ const Text  = styled.div`
         }
     }
     & ul{
-        margin:10px 0;
+        margin:0px 0;
         & h2{
             font-size:21px;
             padding-bottom:0px;
