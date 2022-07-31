@@ -19,7 +19,7 @@ import Modal from './Modal'
 
 const Header = (props) => {
 
-  let [site,sitech] = useState(['https://pf.kakao.com/chat', 'https://github.com/BAKHONGMIN', 'mailto:ghdals2655@naver.com', 'tel:010-2162-2664']);
+  let [site,sitech] = useState(['https://open.kakao.com/o/srpCpFqe', 'https://github.com/BAKHONGMIN', 'mailto:ghdals2655@naver.com', 'tel:010-2162-2664']);
   const [isOpen, setMenu] = useState(false);  // 메뉴의 초기값을 false로 설정
   const toggleMenu = () => {
         setMenu(isOpen => !isOpen); // on,off 개념 boolean

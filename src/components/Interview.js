@@ -20,9 +20,9 @@ const Interview = () =>{
         <Wrapper>
           <Accordion theme={ThemeMode[0]}  
           title="자기소개 부탁드립니다." 
-          children='안녕하세요. 카멜레온 UX/UI디자이너 박홍민입니다.
+          children='안녕하세요. 카멜레온 웹 퍼블리셔 박홍민입니다.
           저는 워킹홀리데이, 해외출장을 다수 다니며 다양한 경험을 쌓아 빠르게 변화하는 사회에 즉각적으로 반응하는 인재입니다.'
-          childrenc="<中文>你好。我是变色龙网路发行商朴鸿民。因为我去过打工度假跟跟很多国家出差，获得很多各种经历, 所以能在瞬息万变的社会上立即作出反应."
+          childrenc="<中文>你好。我是变色龙网络出版商朴鸿民。因为我去过打工度假跟跟很多国家出差，获得很多各种经历, 所以能在瞬息万变的社会上立即作出反应."
           />
           <Accordion 
           title="이직을 하려는 이유는 무엇인가요?"
@@ -55,7 +55,6 @@ const H1  = styled.div`
     z-index:999;
 `
 const Wrapper  = styled.div`  
-    width: 630px;
-    margin: 20px auto;
+    
 
 `

@@ -19,4 +19,5 @@ export default ComLayout;
 const WrapContainer = styled.main`
   height: 100vh;
   width:100%;
+  overflow:auto;
 `;

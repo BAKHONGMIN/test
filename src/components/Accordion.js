@@ -27,9 +27,9 @@ const Accordion = ({ title, children, childrenc }) => {
 
 const Text = styled.div`
     font-family: "Notosans-m";
-
+    display: table; margin-left: auto; margin-right: auto; 
    & .accordion-item {
-    overflow: hidden;
+    overflow: auto;
     transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
     height: auto;
     max-height: 700px;
@@ -45,7 +45,7 @@ const Text = styled.div`
     font-family: 'Notosans-kr-m';
     cursor: pointer;
     color: ${({ theme }) => theme.textColor};
-    padding: 0.5em 1.5em;
+    padding: 0.7em 1em;
     border: solid 1.5px;
     border-color:${({ theme }) => theme.borderColor};
     border-radius: 1em;
@@ -53,7 +53,9 @@ const Text = styled.div`
     justify-content: space-between;
     align-items: center;
     margin:10px 0;
-    width:100vmin;
+    width:50vw;
+    min-width:400px;
+    max-width:700px;
   
     &::after {
       content: "";
@@ -82,7 +84,9 @@ const Text = styled.div`
   .accordion-content {
     padding: 1em 1.5em;
     background:#3552;
-    width:100vmin;
+    width:50vw;
+    min-width:400px;
+    max-width:700px;
   }
   
 

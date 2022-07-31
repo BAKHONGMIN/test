@@ -16,7 +16,6 @@ const TextEffect = () =>{
         <Text>
         <div class="text">
             <h1>INTERVIEW</h1>
-            {/* <h2>INTERVIEW</h2> */}
         </div>
         </Text>
         );
@@ -27,7 +26,6 @@ const Text  = styled.div`
 .text{
     width:100%;
     text-align:center;
-
   }
   h1{
     font-size:4vw;
@@ -35,12 +33,12 @@ const Text  = styled.div`
     font-family: "Notosans-m", sans-serif;
     text-align:center;
     ${({ theme }) => theme.textColor};
-    letter-spacing:30px;
+    letter-spacing:10px;
     transition:1s;
     -webkit-transition:1s;
     -ms-transition:1s;
     position: relative;
-    padding:10px;
+    padding:20px;
 
    
   }

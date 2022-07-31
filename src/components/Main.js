@@ -14,13 +14,13 @@ import { useTheme } from '../context/themeProvider';
 
 const Main = () => {
   // const names = ['카멜레온같은 박홍민', '똑똑한 박홍민', '한결같은 박홍민', '진실된 박홍민', '변하지 않는 박홍민', '카멜레온 같은 박홍민'] ;
-  let [good,goodness] = useState(['기획,디자인 모두 가능한 UX/UI 디자이너 박홍민','카멜레온 같은 박홍민',  '변화를 두려워하지 않는 박홍민', '성실한 박홍민','중국어 가능한 박홍민','분위기 메이커 박홍민']);    
+  let [good,goodness] = useState(['고객의 생각을 구현하는 웹퍼블리셔 박홍민','중국어 가능한 박홍민','카멜레온 같은 박홍민',  '변화를 두려워하지 않는 박홍민', '성실한 박홍민','분위기 메이커 박홍민']);    
   // const nameList = names.map((index) => (<Slidetext name={index}/>));
   const ThemeMode = useTheme();
   return (
     <AppLayout>
       <Bodywrap theme={ThemeMode[0]}>
-        <Bak theme={ThemeMode[0]}><img src={Logo} alt="logo" /></Bak>
+      <Bak theme={ThemeMode[0]}><img src={Logo} alt="logo" /></Bak>
         <Search>
           <Iconsearch theme={ThemeMode[0]}><img src={Searchimg} alt="search" width="20px"/></Iconsearch>
           <Input theme={ThemeMode[0]}>
@@ -48,14 +48,15 @@ export default Main;
 
 
 const Bodywrap = styled.div`
-  width:100px
+  width:100%;
   background-color: #333333;
-  overflow: auto;
+  overflow: scroll;
 `
 
 const Bak = styled.div`
   & img {
-    width: 150px;
+    width: 13vw;
+    min-width:130px;
     position: fixed;
     top: 35%;
     left: 50%;
@@ -69,7 +70,8 @@ const Search = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 460px;
+  width: 40vw;
+  min-width:350px;
   height: 20px;
   line-height: 20px;
   margin: 0;
@@ -82,7 +84,7 @@ const Input = styled.div`
   padding: 6px 60px;
   box-shadow:0  0 2px rgb(193, 193, 193);
   text-align: left;
-  overflow: hidden;
+  overflow: auto;
   height: 40px;
   -webkit-animation-name: movingPara;
   -webkit-animation-duration: 2s;

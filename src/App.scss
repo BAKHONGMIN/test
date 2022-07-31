@@ -49,9 +49,16 @@
     from { height: 40px; }
     to { height: 290px; }
 }
+.textmain{
+  display:flex;
+  justify-content: space-between;
+}
 @media screen and (max-width: 900px){
     .mainimg{
        display: none; 
+    }
+    .textmain{
+      display: block;
     }
 }
 

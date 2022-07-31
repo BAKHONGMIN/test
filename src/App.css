@@ -75,9 +75,21 @@
   }
 }
 
+.textmain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media screen and (max-width: 900px) {
   .mainimg {
     display: none;
+  }
+  .textmain {
+    display: block;
   }
 }
 

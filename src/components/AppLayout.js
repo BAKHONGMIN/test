@@ -23,4 +23,5 @@ export default AppLayout;
 const WrapContainer = styled.main`
   height: 100%;
   width:100%;
+  overflow:auto;
 `;

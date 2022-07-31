@@ -54,6 +54,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0",
     "sass": "^1.50.0"
-  },
-  "homepage": "http://BAKHONGMIN.github.io/test"
+  }
 }

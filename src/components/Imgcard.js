@@ -58,6 +58,7 @@ const Imgcard = () => {
               <div className="main-slide-text">
                 <h2>자기소개 페이지</h2>
                 <span>React</span><br/>
+                <span>작업 기여도 : 100%</span><br/>
                 <span>2021.06.20</span>
               </div>
               <div className="quickbutton">
@@ -75,7 +76,7 @@ const Imgcard = () => {
               <div className="main-slide-text">
                 <h2>SIMMONS</h2>
                 <span>Bootstrap5 + Gnuboard</span><br/>
-                <span>구글 애널리틱스연동</span><br/>
+                <span>작업 기여도 : 100%</span><br/>
                 <span>2021.05.28</span>
               </div>
               <div className="quickbutton">
@@ -96,7 +97,7 @@ const Imgcard = () => {
               <div className="main-slide-text">
                 <h2>diptqyue</h2>
                 <span>Ecommerce</span><br/>
-                <span>구글 애널리틱스연동</span><br/>
+                <span>작업 기여도 : 100%</span><br/>
                 <span>2021.05.20</span>
               </div>
               <div className="quickbutton">
@@ -114,7 +115,7 @@ const Imgcard = () => {
               <div className="main-slide-text">
                 <h2>HBAF</h2>
                 <span>Gnuboard</span><br/>
-                <span>구글 애널리틱스연동</span><br/>
+                <span>작업 기여도 : 100%</span><br/>
                 <span>2021.04.28</span>
               </div>
               <div className="quickbutton">
@@ -132,6 +133,7 @@ const Imgcard = () => {
               <div className="main-slide-text">
                 <h2>diptqyue-event</h2>
                 <span>Bootstrap5/HTML+CSS</span><br/>
+                <span>작업 기여도 : 100%</span><br/>
                 <span>2021.04.18</span>
               </div>
               <div className="quickbutton">

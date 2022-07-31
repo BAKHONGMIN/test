@@ -17,7 +17,7 @@ import '../App.scss';
 
 const About = () =>{
     let [about_me,about_mech] = useState(['About_me', '박홍민', '1995.01.08','인천시 부평구','010.2162.2664']);
-    let [education,educationch] = useState(['Education', '부천대학교 컴퓨터공학과 졸업', '그린컴퓨터아트학원 PWA프론트엔드 양성과정 수료']);
+    let [education,educationch] = useState(['Education', '부천대학교 컴퓨터공학과 졸업', '그린컴퓨터학원 PWA프론트엔드 양성과정 우수훈련생 수료']);
     let [experience,experiencech] = useState(['Experience', '신도기연(BOE) PLC프리랜서', '테스탑 기술영업']);
     let [certificate,certificatech] = useState(['Certificate', '웹디자인 기능사','GTQ 그래픽기술자격', 'Auto CAD2급','HSK 중국어 5급','1종보통 운전면허','한국사 2급','구글애널리틱스']);
     const ThemeMode = useTheme();
@@ -28,11 +28,11 @@ const About = () =>{
             <Aboutmap>
                 <Content>
                     <Main>
-                        <li className='maintext'>
+                        <div className='maintext'>
                         <h2>BAK HONG MIN</h2>
-                        <button><a href='http://naver.me/Frvjwg7X' target='_blank'> RESUME</a></button>
+                        <button><a href='http://naver.me/Gm9DxGYF' target='_blank'> RESUME</a></button>
                         <Text>
-                        <div>
+                        <div className='textmain'>
                             <ul>
                                 <h2>{about_me[0]}</h2>
                                 <li>
@@ -55,16 +55,18 @@ const About = () =>{
                                 </li>
                             </ul>
                         </div>
+                        <div>
                             <ul>
                                 <h2>{education[0]} &amp; {experience[0]}</h2>
                                 <li>
-                                    <span><h3>14.02 ~ 18.02</h3><h4>{education[1]}</h4></span>
-                                    <span><h3>21.12 ~ 22.05</h3><h4>{education[2]}</h4></span><br/>
-                                    <span><h3>19.02 ~ 19.06</h3><h4>{experience[1]}</h4></span>
+                                    <span><h3>21.12 ~ 22.05</h3><h4>{education[2]}</h4></span>
+                                    <span><h3>14.02 ~ 18.02</h3><h4>{education[1]}</h4></span><br/>
                                     <span><h3>19.10 ~ 21.10</h3><h4>{experience[2]}</h4></span>
+                                    <span><h3>19.02 ~ 19.06</h3><h4>{experience[1]}</h4></span>
                                 </li>
                             </ul>
-              
+                        </div>
+                        <div>
                             <ul>
                                 <h3>Skills</h3>
                                 <li>
@@ -80,13 +82,14 @@ const About = () =>{
                                     </Img>
                                 </li>
                             </ul>
+                        </div>
                         </Text>
-                        </li>
+                        </div>
                     </Main>
                 </Content>
                 <Mainimg>
                 <div className="mainimg">
-                    <img src={mainimg} alt='mainimg' width="500px"/>
+                    <img src={mainimg} alt='mainimg' width="420px"/>
                 </div>
                 </Mainimg>
             </Aboutmap>
@@ -103,14 +106,14 @@ const Aboutmap  = styled.div`
     font-family: "Notosans-m", "Notosans-kr-m";
 `
 const Content  = styled.div`
-    width:500px;
+    width:550px;
     padding:5px 10px;
     height:100%;
 `
 const Main  = styled.ul`
     width:100%;
     font-family: "Notosans-m", "Notosans-kr-m";
-    & li{
+    & div{
         
         & h2{
             font-size:20px;
@@ -144,13 +147,6 @@ const Main  = styled.ul`
 `
 const Text  = styled.div`
     margin-top:10px;
-    & div{
-        display:flex;
-        justify-content: space-between;
-        & ul{
-            
-        }
-    }
     & ul{
         margin:0px 0;
         & h2{
